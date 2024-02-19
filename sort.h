@@ -25,10 +25,13 @@ typedef struct listint_s
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void swap(int *a, int *b);
+int partition(int *array, size_t size, int left, int right);
+void sort(int *array, size_t size, int left, int right);
 
 /* functions */
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
 
 #endif /*SORT_H*/
