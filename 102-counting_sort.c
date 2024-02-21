@@ -56,7 +56,7 @@ void counting_sort(int *array, size_t size)
 * Return: maximum value of the array
 */
 
-int get_max(int *array, size_t size)
+int get_max(int *array, int size)
 {
 	int max = array[0], i;
 

@@ -29,7 +29,7 @@ int partition(int *array, size_t size, int left, int right);
 void sort(int *array, size_t size, int left, int right);
 size_t list_len(listint_t *list);
 void switch_nodes(listint_t **list, listint_t **p);
-int get_max(int *array, size_t size);
+int get_max(int *array, int size);
 
 /* functions */
 void bubble_sort(int *array, size_t size);
