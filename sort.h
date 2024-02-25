@@ -30,6 +30,9 @@ void sort(int *array, size_t size, int left, int right);
 size_t list_len(listint_t *list);
 void switch_nodes(listint_t **list, listint_t **p);
 int get_max(int *array, int size);
+void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
+void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
+		size_t back);
 
 /* functions */
 void bubble_sort(int *array, size_t size);
@@ -39,5 +42,6 @@ void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
 
 #endif /*SORT_H*/
