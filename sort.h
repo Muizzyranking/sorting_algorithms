@@ -33,10 +33,12 @@ int get_max(int *array, int size);
 void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back);
 void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
 		size_t back);
-void swap_ints(int *a, int *b);
+void swap(int *a, int *b);
 void max_heapify(int *array, size_t size, size_t base, size_t root);
 int get_max(int *array, int size);
 void radix_counting_sort(int *array, size_t size, int sig, int *buff);
+void b_merge(int *array, int low, int count, int dir, size_t size);
+void b_sort(int *array, int low, int count, int dir, size_t size);
 
 /* functions */
 void bubble_sort(int *array, size_t size);
@@ -49,5 +51,6 @@ void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
+void bitonic_sort(int *array, size_t size);
 
 #endif /*SORT_H*/
